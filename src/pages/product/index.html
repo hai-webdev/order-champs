@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+</head>
+
+<body>
+  <!-- 引入公共页头 -->
+  <%= require("html-loader!../common/header/index.html") %>
+    <%= require("html-loader!../common/crumbs/index.html") %>
+      <section class="banner-container wow fadeInUp">
+        <img src="/public/images/product-banner.jpg" alt="">
+      </section>
+      <section class="product-container min-center">
+        <ul class="product-list">
+          <li class="product-item bg-module wow fadeInUp">
+            <a href="product_view.html">
+              <div class="text">
+                <div class="title">cf海盐葡萄柚上架</div>
+                <div class="line"></div>
+                <div class="subtitle">Products</div>
+              </div>
+              <img src="/public/images/product01.png" alt="" class="bg-img">
+            </a>
+          </li>
+          <li class="product-item bg-module wow fadeInUp" data-wow-delay="100ms">
+            <a href="product_view.html">
+              <div class="text">
+                <div class="title">香皂</div>
+                <div class="line"></div>
+                <div class="subtitle">佛手柑</div>
+              </div>
+              <img src="/public/images/product02.png" alt="" class="bg-img">
+            </a>
+          </li>
+          <li class="product-item bg-module wow fadeInUp" data-wow-delay="200ms">
+            <a href="product_view.html">
+              <div class="text">
+                <div class="title">山茶花</div>
+                <div class="line"></div>
+                <div class="subtitle">山茶花</div>
+              </div>
+              <img src="/public/images/product03.png" alt="" class="bg-img">
+            </a>
+          </li>
+          <li class="product-item w-2 bg-module wow fadeInUp" data-wow-delay="300ms">
+            <a href="product_view.html">
+              <div class="text">
+                <div class="title">香橙</div>
+                <div class="line"></div>
+                <div class="subtitle">香橙</div>
+              </div>
+              <img src="/public/images/product04.png" alt="" class="bg-img">
+            </a>
+          </li>
+          <li class="product-item w-2 bg-module wow fadeInUp" data-wow-delay="400ms">
+            <a href="product_view.html">
+              <div class="text">
+                <div class="title">洋甘菊</div>
+                <div class="line"></div>
+                <div class="subtitle">洋甘菊</div>
+              </div>
+              <img src="/public/images/product05.png" alt="" class="bg-img">
+            </a>
+          </li>
+        </ul>
+      </section>
+      <section class="serve-container bg-module">
+        <div class="title-module">
+          <div class="title">我们的服务</div>
+        </div>
+        <ul class="server-list min-center">
+          <li class="server-item wow fadeInUp">
+            <div class="icon">
+              <img src="/public/images/icon1.png" alt="">
+              <img class="hover" src="/public/images/icon1_hover.png" alt="">
+            </div>
+            <div class="text">
+              <div class="title">Lorem, ipsum.</div>
+              <div class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, magnam.</div>
+            </div>
+          </li>
+          <li class="server-item wow fadeInUp" data-wow-delay="100ms">
+            <div class="icon">
+              <img src="/public/images/icon1.png" alt="">
+              <img class="hover" src="/public/images/icon1_hover.png" alt="">
+            </div>
+            <div class="text">
+              <div class="title">Lorem, ipsum.</div>
+              <div class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, magnam.</div>
+            </div>
+          </li>
+          <li class="server-item wow fadeInUp" data-wow-delay="200ms">
+            <div class="icon">
+              <img src="/public/images/icon1.png" alt="">
+              <img class="hover" src="/public/images/icon1_hover.png" alt="">
+            </div>
+            <div class="text">
+              <div class="title">Lorem, ipsum.</div>
+              <div class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, magnam.</div>
+            </div>
+          </li>
+          <li class="server-item wow fadeInUp" data-wow-delay="300ms">
+            <div class="icon">
+              <img src="/public/images/icon1.png" alt="">
+              <img class="hover" src="/public/images/icon1_hover.png" alt="">
+            </div>
+            <div class="text">
+              <div class="title">Lorem, ipsum.</div>
+              <div class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, magnam.</div>
+            </div>
+          </li>
+          <li class="server-item wow fadeInUp" data-wow-delay="400ms">
+            <div class="icon">
+              <img src="/public/images/icon1.png" alt="">
+              <img class="hover" src="/public/images/icon1_hover.png" alt="">
+            </div>
+            <div class="text">
+              <div class="title">Lorem, ipsum.</div>
+              <div class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, magnam.</div>
+            </div>
+          </li>
+          <li class="server-item wow fadeInUp" data-wow-delay="500ms">
+            <div class="icon">
+              <img src="/public/images/icon1.png" alt="">
+              <img class="hover" src="/public/images/icon1_hover.png" alt="">
+            </div>
+            <div class="text">
+              <div class="title">Lorem, ipsum.</div>
+              <div class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, magnam.</div>
+            </div>
+          </li>
+        </ul>
+        <div class="bg-mask"></div>
+        <img src="/public/images/serve-bg.jpg" alt="" class="bg-img">
+      </section>
+      <!-- 引入公共页尾 -->
+      <%= require("html-loader!../common/footer/index.html") %>
+</body>
+
+</html>

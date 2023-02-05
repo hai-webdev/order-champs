@@ -1,0 +1,137 @@
+.pc-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2%;
+  box-sizing: border-box;
+  transition: 0.6s;
+  &.active {
+    background-color: #000;
+  }
+  .logo {
+    height: 62px;
+    img {
+      display: block;
+      height: 100%;
+    }
+  }
+  .nav-list {
+    .nav-item {
+      color: #fff;
+      margin: 0 20px;
+      padding: 10px 0;
+      position: relative;
+      &::after {
+        content: "";
+        position: absolute;
+        width: 0;
+        opacity: 0;
+        height: 2px;
+        left: 0;
+        bottom: 0;
+        background-color: #fff;
+        transition: 0.6s;
+      }
+      &:hover,
+      &.on {
+        &::after {
+          width: 100%;
+          opacity: 1;
+        }
+      }
+    }
+  }
+  &.inner {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    .nav-list {
+      .nav-item {
+        color: #000;
+        &::after {
+          background-color: #000;
+        }
+      }
+    }
+  }
+}
+.m-header {
+  display: none;
+  height: 52px;
+  padding: 0 10px;
+  // display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  box-sizing: border-box;
+  background-color: #fff;
+  .logo {
+    height: 48px;
+    img {
+      height: 100%;
+    }
+  }
+  .menu{
+    span{
+      display: block;
+      width: 32px;
+      height: 3px;
+      background-color: #000;
+      margin-bottom: 4px;
+      transition: .6s;
+      &:last-child{
+        margin-bottom: 0;
+      }
+    }
+    &.on{
+      span{
+        &:nth-child(1){
+          transform: translateY(7px) rotate(45deg);
+        }
+        &:nth-child(3){
+          transform: translateY(-7px) rotate(-45deg);
+        }
+        &:nth-child(2){
+          opacity: 0;
+        }
+      }
+    }
+  }
+  .nav-container {
+    display: none;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 51px;
+    z-index: 99;
+    background-color: #fff;
+    .nav-list{
+      display: flex;
+      padding: 20px 0 30px;
+      flex-direction: column;
+      .nav-item{
+        display: block;
+        padding: 15px 0;
+        text-align: center;
+        &.on{
+          color:#fff;
+          background-color: #000;
+        }
+      }
+    }
+  }
+  &.inner {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+
+  }
+}
+@import "./mobile.less" screen and (max-width: 768px);

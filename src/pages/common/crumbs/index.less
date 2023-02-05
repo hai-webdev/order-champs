@@ -1,0 +1,24 @@
+body{
+  padding-top: 62px;
+}
+.crumbs-container {
+  .crumbs-center {
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .left-title {
+      font-size: 18px;
+      color: #303030;
+    }
+    .right-crumbs{
+      a{
+        color:#999;
+        &.on{
+          color:#333;
+        }
+      }
+    }
+  }
+}
+@import "./mobile.less" screen and (max-width:768px);
